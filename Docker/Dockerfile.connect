@@ -1,0 +1,5 @@
+FROM cnfldemos/cp-server-connect-datagen:0.6.2-7.5.0
+
+COPY connect-entrypoint.sh /etc/confluent/docker/connect-entrypoint.sh
+USER root
+RUN chmod +x /etc/confluent/docker/connect-entrypoint.sh
